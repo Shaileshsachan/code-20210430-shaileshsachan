@@ -1,0 +1,23 @@
+{
+  "name": "code-20210430-shaileshsachan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shaileshsachan/code-20210430-shaileshsachan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shaileshsachan/code-20210430-shaileshsachan/issues"
+  },
+  "homepage": "https://github.com/Shaileshsachan/code-20210430-shaileshsachan#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

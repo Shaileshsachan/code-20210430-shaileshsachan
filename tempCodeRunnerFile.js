@@ -1,10 +1,3 @@
-const fs = require("fs");
-let data = JSON.parse(fs.readFileSync("./data.json", "utf8"));
-
-convertToMeters = (HeightCm) => {
-  return HeightCm / 100;
-};
-
 classifyBMI = (bmi) => {
   let bmiCategory;
   let healthRisk;
@@ -29,17 +22,3 @@ classifyBMI = (bmi) => {
   }
   console.log(`${bmi}       ${bmiCategory}        ${healthRisk}`);
 };
-
-BMI = (HeightCm, WeightKg) => {
-  let heightMeter = convertToMeters(HeightCm);
-  bmi = (WeightKg / heightMeter ** 2).toFixed(2);
-  classifyBMI(bmi);
-};
-
-parseFunc = (data) => {
-  for (i of data) {
-    BMI(i.HeightCm, i.WeightKg);
-  }
-};
-
-parseFunc(data);
